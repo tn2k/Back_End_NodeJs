@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How kteam </title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/">Create User</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li><a href="about.asp">About</a></li>
+    </ul>
+    <table action="/home" method="get">
+        <thead>
+            <tr>
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>req.body.FirstName</td>
+                <td>req.body.LastName</td>
+                <td>req.body.email</td>
+                <td>req.body.City</td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</body>
+
+</html>
